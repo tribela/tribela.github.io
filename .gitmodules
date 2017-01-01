@@ -1,0 +1,3 @@
+[submodule "thinkspace"]
+	path = thinkspace
+	url = https://github.com/heiswayi/thinkspace
