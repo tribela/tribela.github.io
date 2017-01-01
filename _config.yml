@@ -2,7 +2,7 @@
 # SEO settings
 title: "Jeong"
 title2: "Arm" # default: ""
-description: "Just another minimalist Jekyll theme that focuses on technical writing."
+description: "Just blogging!"
 keywords: "Engineering, Music, Think"
 url: https://kjwon15.github.io
 baseurl: null # apply null if repo name is something like username.github.io
