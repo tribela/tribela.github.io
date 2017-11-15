@@ -38,5 +38,14 @@ date: 2017-11-14 08:50:17 +0900
 
 하지만 결국 pstate를 꺼야 한다. `/etc/default/grub` 파일을 열고 `GRUB_CMDLINE_LINUX`에 `intel_pstate=diable`을 적어 주고 `sudo grub-update` 해서 GRUB를 업데이트 해 주자. 이러면 커널이 해당 기능을 아예 안 쓴다. 웬만하면 쓰는 게 좋겠지만 버그 때문에 컴퓨터를 못 쓰겠다는데 어쩌겠어, 꺼야지.
 
+----
+
+추가 (2017-11-16 02:13:55 +0900)
+    난 이 방법으로 고쳐진 줄 알았다. 근데 안 고쳐졌다.
+pstate를 켜면 무조건 400MHz로 고정되어 있고 끄면 CPU 로드가 올라갈 때 최대 클럭을 낮춰버린다. 결국 1GHz 고정이다.
+아래 영상이 그 증거.
+
+[![asciicast](https://asciinema.org/a/147584.png)](https://asciinema.org/a/147584)
+
 
 [kernel ppa]: http://kernel.ubuntu.com/~kernel-ppa/mainline/
