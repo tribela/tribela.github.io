@@ -40,7 +40,7 @@ og_locale: "en_US"
 twitter_card: "summary_large_image"
 twitter_site: "@kjwon15"
 
-gems:
+plugins:
   - bourbon
   - jekyll-paginate
 
