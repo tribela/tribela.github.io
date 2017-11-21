@@ -7,7 +7,7 @@ keywords: "Engineering, Music, Think"
 url: https://kjwon15.github.io
 baseurl: null # apply null if repo name is something like username.github.io
 
-google_analytics: UA-XXXXX-XX
+google_analytics: UA-109997464-1
 repo: http://github.com/kjwon15/kjwon15.github.io
 disqus_shortname: "kjwon15-github"
 comments: true 
