@@ -43,6 +43,12 @@ $on-laptop:        800px;
   }
 }
 
+.simple-post-list {
+  & > li {
+    margin: 10px auto;
+  }
+}
+
 
 
 // Import partials from the `whiteglass` theme.
