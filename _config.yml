@@ -6,15 +6,16 @@ url: http://blog.kjwon15.net/
 baseurl: null # apply null if repo name is something like username.github.io
 timezone: Asia/Seoul
 
+theme: jekyll-whiteglass
 
 # Build settings
-markdown    : kramdown
+markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: true
-highlighter : rouge
+highlighter: rouge
 
-permalink   : /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 
 paginate: 10
 paginate_path: /posts/:num
