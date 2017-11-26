@@ -2,7 +2,7 @@ title: "Jeong Arm"
 lang: "ko"
 author: "Jeong Arm"
 description: "Jeong Arm's blog"
-url: http://blog.kjwon15.net/
+url: http://blog.kjwon15.net
 baseurl: null # apply null if repo name is something like username.github.io
 timezone: Asia/Seoul
 
