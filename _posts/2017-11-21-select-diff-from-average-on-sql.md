@@ -2,7 +2,9 @@
 layout: post
 title: Select diff from average on SQL
 category: SQL
-tags: sub query, aggregate
+tags:
+- sub query
+- aggregate
 date: 2017-11-21 14:00:06 +0900
 ---
 

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: 우분투 17.10과 인텔의 문제 삽질
-tags: fix, Ubuntu
 category: Ubuntu
+tags:
+- fix
+- Ubuntu
 author: Kjwon15
 date: 2017-11-14 08:50:17 +0900
 ---
