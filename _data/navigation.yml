@@ -3,7 +3,3 @@ main:
     url: "/about/"
   - title: Archives
     url: "/archives/"
-  - title: By categories
-    url: "/categories/"
-  - title: By tags
-    url: "/tags/"
