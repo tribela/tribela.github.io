@@ -6,10 +6,6 @@ url: https://kjwon15.github.io
 baseurl: null # apply null if repo name is something like username.github.io
 timezone: Asia/Seoul
 
-theme: jekyll-whiteglass
-
-google_analytics: UA-109997464-1
-comments: true 
 
 # Build settings
 markdown    : kramdown
@@ -47,3 +43,4 @@ exclude:
 
 # Theme specific settings
 google_analytics: UA-109997464-1
+comments: false
