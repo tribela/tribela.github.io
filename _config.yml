@@ -40,6 +40,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+# Travis
+  - vendor
 
 # Theme specific settings
 google_analytics: UA-109997464-1
