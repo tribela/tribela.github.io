@@ -1,75 +1,49 @@
-
-# SEO settings
-title: "Jeong"
-title2: "Arm" # default: ""
-description: "Just blogging!"
+title: "Jeong Arm"
+lang: "ko"
+author: "Jeong Arm"
 keywords: "Engineering, Music, Think"
 url: https://kjwon15.github.io
 baseurl: null # apply null if repo name is something like username.github.io
+timezone: Asia/Seoul
+
+theme: jekyll-whiteglass
 
 google_analytics: UA-109997464-1
-repo: http://github.com/kjwon15/kjwon15.github.io
-disqus_shortname: "kjwon15-github"
 comments: true 
 
 # Build settings
-permalink   : /:year/:title/
 markdown    : kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
 highlighter : rouge
+
+permalink   : /:year/:month/:day/:title/
+
+paginate: 5
+paginate_path: /posts/:num
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
 
 source: ./
 destination: ./_site
 
-# Sass configuration
-sass:
-  sass_dir: assets/scss
-  style: compressed # expanded
-
-# Author settings
-author:
-  name     : "Jeong Arm"
-  job      : "Software Engineer"
-  bio      : "My name is Jeong Arm (Pronounced as Jeong Ah-reum)."
-  thumb    : /images/author.jpg
-  email    : kjwonmail@gmail.com
-  url      : http://kjwon15.github.io
-  github   : http://github.com/kjwon15
-
-# social settings
-og_locale: "en_US"
-twitter_card: "summary_large_image"
-twitter_site: "@kjwon15"
-
 plugins:
-  - bourbon
+  - jekyll-archives
   - jekyll-paginate
+  - jekyll-sitemap
 
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
-exclude: 
-  - thinkspace/
-  - "gulp"
-  - "node_modules"
-  - "bower"
-  - "bower_components"
-  - "config.rb"
-  - "src"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - ".rvmrc"
-  - ".rbenv-version"
-  - "package.json"
-  - "gulpfile.js"
-  - "README.md"
-  - "Rakefile"
-  - "changelog.md"
-
-plugins_dir: thinkspace/_plugins/
-layouts_dir: thinkspace/_layouts/
-includes_dir: thinkspace/_includes/
-
+# Theme specific settings
+google_analytics: UA-109997464-1
