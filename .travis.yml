@@ -1,6 +1,10 @@
 sudo: false
 language: ruby
-cache: bundler
+cache:
+  bundler: true
+  directories:
+    - $HOME/.rvm
+
 rvm:
   - 2.4.2
 
