@@ -43,6 +43,9 @@ $ sudo apt install chrome-gnome-shell
 - [Panel World Clock (lite)](https://extensions.gnome.org/extension/946/panel-world-clock-lite/)
   우분투 유니티에서 나온 지 얼마 되지도 않은 그 세계시각 기능이 gnome-shell로 오면서 플러그인을 설치해야 하게 생겼다.
 
+- [Night Light Slider](https://extensions.gnome.org/extension/1276/night-light-slider/)
+  밤이 되면 눈이 편하라고 화면을 약간 누렇게 해 주는 기능이 기본으로 있는데 이건 해가 지기 시작 할 땐 좀 적당하지만 최대로 가면 너무 붉다. 그 값을 조절하는 플러그인.
+
 
 ----
 
