@@ -15,8 +15,8 @@ gem "jekyll-paginate", "~> 1.1"
 # Added at 2017-11-26 09:40:17 +0900 by kjwon15:
 gem "jekyll-archives", "~> 2.1"
 
-# Added at 2017-11-26 09:45:48 +0900 by kjwon15:
-gem "jekyll-whiteglass", "~> 1.4"
-
 # Added at 2017-12-16 17:43:34 +0900 by kjwon15:
 gem "jekyll-gist", "~> 1.5"
+
+# Added at 2017-12-28 16:08:14 +0900 by kjwon15:
+gem "jekyll-whiteglass", "~> 1.5"
