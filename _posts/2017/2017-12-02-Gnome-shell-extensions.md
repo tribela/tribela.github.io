@@ -40,6 +40,9 @@ $ sudo apt install chrome-gnome-shell
 - [K StatusNotifiersItem/AppIndicatorSuppport](https://extensions.gnome.org/extension/615/appindicator-support/)
   우분투의 고질적인 문제인 트레이 아이콘이 안 보이는 문제가 gnome-shell로 오면서 이걸 설치해야 해결 된다.
 
+- [TopIcons Plus](https://extensions.gnome.org/extension/1031/topicons/)[^2]
+  이것도 깔아야 rambox, discord 같은 앱들도 제대로 보인다. 대체 뭐가 문제인지 모르겠다.
+
 - [Panel World Clock (lite)](https://extensions.gnome.org/extension/946/panel-world-clock-lite/)
   우분투 유니티에서 나온 지 얼마 되지도 않은 그 세계시각 기능이 gnome-shell로 오면서 플러그인을 설치해야 하게 생겼다.
 
@@ -50,3 +53,4 @@ $ sudo apt install chrome-gnome-shell
 ----
 
 [^1]: 정확히는 플러그인이 아니라 확장(extension)이지만 한국이 그런 거 구분하긴 했나.. 그것보다 플러그인이라고 봐도 문제 없는 구조다.
+[^2]: Added 2018-01-03 08:34:19 +0900
