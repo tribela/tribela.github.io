@@ -49,6 +49,14 @@ $on-laptop:        800px;
   }
 }
 
+[lang='ko'] article .post-content {
+  line-height: 2;
+}
+
+.post-content {
+  font-size: 1.2rem;
+}
+
 
 
 // Import partials from the `whiteglass` theme.
