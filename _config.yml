@@ -47,4 +47,4 @@ exclude:
 
 # Theme specific settings
 google_analytics: UA-109997464-1
-comments: true
+comments: false

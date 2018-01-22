@@ -57,9 +57,32 @@ $on-laptop:        800px;
   font-size: 1.2rem;
 }
 
+.share-buttons {
+  text-align: center;
+
+  > a {
+    margin: 0 6px;
+
+    > img {
+      height: 32px;
+      width: 32px;
+      transition: .4s transform;
+    }
+
+    &:hover > img {
+      transform: translateY(-3px);
+    }
+  }
+
+
+  a[href*='twitter.com'] > img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
 
 
 // Import partials from the `whiteglass` theme.
 @import "highlight_native.css";
-@import "share-buttons.scss";
 @import "whiteglass";
