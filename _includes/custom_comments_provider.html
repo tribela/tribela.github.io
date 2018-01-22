@@ -1,0 +1,17 @@
+<aside class="share-buttons">
+    <h3>Share this post</h3>
+
+    {% assign url = page.url | absolute_url | cgi_escape %}
+    {% assign title =  page.title | cgi_escape  %}
+
+    <a target="_blank" role="button" href="web+mastodon://share?text={{ title }}%0a{{ url }}" title="Mastodon share"><img src="{{ '/imgs/icons/mastodon.svg' | relative_url }}" alt="Mastodon" /></a>
+
+    <a target="_blank" role="button" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" title="Facebook share"><img src="{{ '/imgs/icons/facebook.svg' }}" alt="Facebook" /></a>
+
+    <a target="_blank" role="button" href="https://telegram.me/share/url?url={{ url }}&text={{ title }}" title="Telegram share"><img src="{{ '/imgs/icons/telegram.svg' }}" alt="Telegram" /></a>
+
+    <a target="_blank" role="button" href="https://plus.google.com/share?url={{ url }}&text={{ title }}" title="Google+ share"><img src="{{ '/imgs/icons/googleplus.svg' }}" alt="Google+" /></a>
+
+    <a target="_blank" role="button" href="https://twitter.com/share?url={{ url }}&text={{ title }}" title="Birdsite share"><img src="{{ '/imgs/icons/twitter.svg' }}" alt="Birdsite" /></a>
+
+</aside>
