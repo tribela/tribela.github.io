@@ -49,8 +49,12 @@ $ sudo apt install chrome-gnome-shell
 - [Night Light Slider](https://extensions.gnome.org/extension/1276/night-light-slider/)
   밤이 되면 눈이 편하라고 화면을 약간 누렇게 해 주는 기능이 기본으로 있는데 이건 해가 지기 시작 할 땐 좀 적당하지만 최대로 가면 너무 붉다. 그 값을 조절하는 플러그인.
 
+- [system-monitor](https://extensions.gnome.org/extension/120/system-monitor/)[^3]
+  시스템 사용량을 그래프로 그려 주는 애플릿이다. `gir1.2-gtop-2.0`, `gir1.2-networkmanager-1.0`을 추가로 설치해 줘야 한다.
+
 
 ----
 
 [^1]: 정확히는 플러그인이 아니라 확장(extension)이지만 한국이 그런 거 구분하긴 했나.. 그것보다 플러그인이라고 봐도 문제 없는 구조다.
 [^2]: Added 2018-01-03 08:34:19 +0900
+[^3]: Added 2018-03-07 07:37:54 +0900
