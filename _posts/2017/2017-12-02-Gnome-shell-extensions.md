@@ -52,9 +52,19 @@ $ sudo apt install chrome-gnome-shell
 - [system-monitor](https://extensions.gnome.org/extension/120/system-monitor/)[^3]
   시스템 사용량을 그래프로 그려 주는 애플릿이다. `gir1.2-gtop-2.0`, `gir1.2-networkmanager-1.0`을 추가로 설치해 줘야 한다.
 
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)[^4]
+  독의 위치를 변경하고 모양이나 동작 등을 변경할 수 있다. 독에 있는 실행 중인 아이콘을 워크스페이스/모니터별로 분리하는 기능도 있다.
+
+- [Activities Configurator](https://extensions.gnome.org/extension/358/activities-configurator/)[^4]
+  별로 쓸 일조차 없는 Activities 버튼을 지워버리기 위해 설치했다. 밑에 있는 Pixel saver와 같이 이용하기 좋다.
+
+- [Pixel saver](https://extensions.gnome.org/extension/723/pixel-saver/<Paste>)[^4]
+  우분투 유니티에서 맥의 그것처럼 창을 최대화 하면 메뉴와 버튼이 상단바에 붙게 되는 게 있었는데 그것과 비슷한 동작을 한다. 이름 그대로 창의 타이틀바만큼의 픽셀을 아껴준다.
+
 
 ----
 
 [^1]: 정확히는 플러그인이 아니라 확장(extension)이지만 한국이 그런 거 구분하긴 했나.. 그것보다 플러그인이라고 봐도 문제 없는 구조다.
 [^2]: Added 2018-01-03 08:34:19 +0900
 [^3]: Added 2018-03-07 07:37:54 +0900
+[^4]: Added 2018-06-14 19:14:14 +0900
