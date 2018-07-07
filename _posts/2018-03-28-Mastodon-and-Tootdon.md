@@ -51,7 +51,7 @@ date: 2018-03-28 18:38:48 +0900
 
 [^6]: https://qdon.space/@jarm/99757213278489523
 
-![Tootdon search screenshot](https://assets.qdon.space/system/media_attachments/files/000/010/001/original/ec9e3fbfc97c45ec.png)
+![Tootdon search screenshot]({{ "/imgs/2018-03-28/ec9e3fbfc97c45ec.png" | absolute_url }})
 
 갑자기 뭔 생각에 그랬는지 몰라도 미심쩍어서 다시 그 API에 요청을 때려 봤는데 Tootdon을 사용하지 않은 글들이 나왔다.
 한 달 넘게 **Tootdon을 사용하지만 않으면** 내 툿은 절대로 그 서버에 저장 되지 않을 거란 믿음이 깨져버린 순간이었다. 내가 사용하지 않더라도 그걸 사용하는 사람이 내 글에 접촉(멘션, 부스트, 별글)을 하면 그걸 또 서버로 보낸다.
