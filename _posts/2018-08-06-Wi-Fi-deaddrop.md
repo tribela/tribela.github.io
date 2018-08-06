@@ -11,7 +11,7 @@ date: 2018-08-06 00:03:57 +0900
 ---
 
 
-방글라데시에서 버스와 관련해 시위가 일어났고 국가는 ISP단에서 인터넷 속도를 제한하고 영상 업로드를 24시간 차단하는 등의 행동을 했다[^관련 기사].
+방글라데시에서 버스와 관련해 시위가 일어났고 국가는 ISP단에서 인터넷 속도를 제한하고 영상 업로드를 24시간 차단하는 등의 행동을 했다[^Reference].
 마침 오늘 난 이럴 때에 유용할 수 있는 도구를 만들었고 이를 공유하고자 한다.
 
 <!--more-->
@@ -82,7 +82,7 @@ USB 아웃풋이 있는 모델 중에 작으면서도 쓸만한 출력이 나오
 난 그냥 순전히 라즈베리 0W 모델을 구입한 후에 "AC 어댑터에 꽂아서 쓰면 진정한 무선이 아니잖아"라는 생각으로 배터리도 달고 충전도 자체수급하도록 만들어 보고 싶어서 만든 프로젝트였다. 하지만 한국의 광주에서 일어났던 것과 비슷한 일이 방글라데시에서 벌어지는 지금, 시대가 달라진만큼 국가적으로 ISP 레벨에서 인터넷 속도를 제한하고 검열을 하고 있다. 검열이야 TOR를 사용해서 우회할 수 있다지만 그것도 인터넷이 되어야 가능한 얘기다. 속도 제한이 걸리거나 최악의 경우 인터넷 자체를 차단한다면 방법은 외부 저장매체에 담아서 물리적으로 이동하는 방법 뿐이다. 와이파이 기반의 데드드랍을 만들어서 해당 지역에 갔다 오는 도중에 사람들이 찍은 사진, 영상을 중거리에서 원격으로 받아 해외 언론에 대신 전달해 주는 식으로 이용 할 수 있을 것이다. 밀고자와 대면으로 접촉하는 경우 정부 관계자들에게 보이고 의심을 사 수색을 당할 수 있기 때문에 그런 방법에 비해 큰 장점이 있을 것이다.
 
 
-[^관련 기사]: https://www.dhakatribune.com/bangladesh/2018/08/05/btrc-no-directive-issued-to-suspend-broadband-internet-service
+[^Reference]: https://www.dhakatribune.com/bangladesh/2018/08/05/btrc-no-directive-issued-to-suspend-broadband-internet-service
 [부품 1]: https://ko.aliexpress.com/item/2PCS-Blue-5V-Micro-USB-1A-18650-Lithium-Battery-Charging-Board/32825966532.html?spm=a2g0s.11045068.rcmd404.1.41b356a4uqQqYY&gps-id=detail404&scm=1007.16891.96945.0&scm_id=1007.16891.96945.0&scm-url=1007.16891.96945.0&pvid=766bd380-f606-4e71-9c33-56b8b76df332
 [부품 2]: https://ko.aliexpress.com/item/5-USB-18650-DIY/32843308095.html?spm=a2g0s.9042311.0.0.3da24c4di1xhLE
 [부품 3]: https://ko.aliexpress.com/item/18650-3-7-4-2-DC-DC/32846456729.html?spm=a2g0s.9042311.0.0.3da24c4di1xhLE
