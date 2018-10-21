@@ -10,6 +10,7 @@ date: 2018-03-28 18:38:48 +0900
 
 ## 모든 일의 시작
 
+{% mastodon https://twingyeo.kr/@sftblw/99513992207846752 %}
 > 2018-02-13 04:16 @sftblw@twingyeo.kr: 툿돈 서치 탐라는 어떻게 구현한건지 궁금하긴 한데... [^1]
 
 [^1]: https://twingyeo.kr/@sftblw/99513992207846752
@@ -21,22 +22,23 @@ date: 2018-03-28 18:38:48 +0900
 
 ## 도화선을 깔았다
 
+{% mastodon https://qdon.space/@jarm/99514212223813626 %}
 > 2018-02-13 05:12 @jarm@qdon.space: 왠지 툿돈 서버에 공개 툿들을 저장해 두고 거기서 검색할 것 같다는 안 좋은 느낌이... [^2]
 
-[^2]: https://qdon.space/@jarm/99514212223813626
-
+{% mastodon https://qdon.space/@jarm/99514230017318097 %}
 > 2018-02-13 05:17 @jarm@qdon.space: DNS 쿼리 까보니까 tootdon-api-prod.us-west-2.elasticbeanstalk.com로 연결 되네요. 여기에 뭔가 있을 듯 [^3]
 
-[^3]: https://qdon.space/@jarm/99514230017318097
-
+{% mastodon https://qdon.space/@jarm/99514259677623660 %}
 > 2018-02-13 05:24 @jarm@qdon.space: api.tootdon.ooo를 사용하는 듯 한데 APK 까서 볼 수 있는 만큼 볼게요. 왠지 재밌을 것 같아요 [^4]
 
-[^4]: https://qdon.space/@jarm/99514259677623660
-
+{% mastodon https://qdon.space/@jarm/99514354143030702 %}
 > 2018-02-13 05:48 @jarm@qdon.space: api.tootdon.ooo/api/v1/statuses
 > 여기에 URL 파라미터로 q, instance, ref를 넣을 수 있네요.
 > 다만 Accept 헤더를 application/json으로 줘야 제대로 응답을 해서 브라우저 주소창에 그냥 치면 안 됩니다 [^5]
 
+[^2]: https://qdon.space/@jarm/99514212223813626
+[^3]: https://qdon.space/@jarm/99514230017318097
+[^4]: https://qdon.space/@jarm/99514259677623660
 [^5]: https://qdon.space/@jarm/99514354143030702
 
 이 외에도 여러 대화가 오고 갔는데 결론은 api.tootdon.ooo라는 사이트를 입구로 가지는 어딘가에 Tootdon을 이용해서 작성하는 공개설정이 `public`인 툿을 모두 저장하고 있다는 걸 알아냈다.
@@ -45,11 +47,10 @@ date: 2018-03-28 18:38:48 +0900
 
 ## 얘들 뭔가 이상한데??
 
+{% mastodon https://qdon.space/@jarm/99757213278489523 %}
 > 2018-03-28 03:11 @jarm@qdon.space: 툿돈의 검색 기능에 대해서 좀 더 파 봤는데 아무래도 툿돈에서 작성한 툿 뿐만 아니라 그 유저들이 부스트 하거나 하는 툿들도 저장하는 것 같다.
 > 안 그러면 다른 앱에서 작성한 툿들이 툿돈 사설 서버에서 검색 될 이유가 전혀 없잖아.
 > 한 마디로 내가 툿돈을 안 쓴다고 해서 툿돈에서 완벽히 벗어나는 게 아니라는 뜻. 대체 뭐 하는 짓이야.. 아무리 공개 범위가 public이라고 해도 그걸 저장하는 건 또 다른 찝찝함이란 말이야. [^6]
-
-[^6]: https://qdon.space/@jarm/99757213278489523
 
 ![Tootdon search screenshot]({{ "/imgs/2018-03-28/ec9e3fbfc97c45ec.png" | absolute_url }})
 
@@ -57,25 +58,42 @@ date: 2018-03-28 18:38:48 +0900
 한 달 넘게 **Tootdon을 사용하지만 않으면** 내 툿은 절대로 그 서버에 저장 되지 않을 거란 믿음이 깨져버린 순간이었다. 내가 사용하지 않더라도 그걸 사용하는 사람이 내 글에 접촉(멘션, 부스트, 별글)을 하면 그걸 또 서버로 보낸다.
 어차피 공개 설정이 `public`이라는 건 어디에 아카이빙 되어도 괜찮다는 뜻으로 글을 써야 하는 건 맞지만 그게 이런 식으로라면 좀 상황이 달라진다. 약관 상의 문제는 없겠지만 _어뷰징을 방지하기 위해 검색 기능을 제한하는_ 마스토돈의 결정에 정면으로 반하면서 그걸 자기들끼리만 쓴다는 게 이건 좀 아니다 싶어서 해외쪽에 글을 남겼다.
 
-<iframe src="https://mastodon.social/@kjwon15/99757268648426867/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
-
-https://mastodon.social/@kjwon15/99757268648426867
-
+{% mastodon https://mastodon.social/@kjwon15/99757268648426867 %}
+> #tootdon is archiving you. Even if you are not using it.
+> (If someone using tootdon boost/fav your toot, tootdon saves your toot into their private server)
+> But why??
 
 ## 알고보니 그 도화선이 화산으로 이어져 있었다.
 
-<iframe src="https://mastodon.social/@slipstream/99757282934340893/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
-
-https://mastodon.social/@slipstream/99757282934340893
+{% mastodon https://mastodon.social/@slipstream/99757282934340893 %}
+> @kjwon15 wtf?
+>
+> I'm going to reverse tootdon now.
+>
+> If I see the evidence of such behaviour, I'll stop recommending it...
 
 
 학교에 씻고 학교에 갔다가 잠깐 확인해 보니 알림창이 폭발적이었다. 그 중 한 유저는 당장 뜯어보겠다고 했다.
 
-<iframe src="https://mastodon.social/@slipstream/99757389248860842/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
+{% mastodon https://mastodon.social/@slipstream/99757389248860842 %}
+> OK, so #tootdon communicates with this server: https://api.tootdon.ooo
+>
+> This server is hosted in the USA(!!!)
+>
+> There are several endpoints: /api/v1/instances gives a paginated list of instances, and seems to be the *only* one that doesn't require authentication.
+>
+> There's also /api/v1/statuses and /api/v1/users. Not sure how authentication to this API works yet...
+>
+> By the way, it also appears to be tied with this company: http://mobirocket.com/
+
 
 해당 API는 인증 없이 사용할 수 있는데 잘못 뜯었는지 인증을 해야 사용 가능한 걸로 착각한 듯 한데 mobirocket이라는 회사와도 연결 되어 있다는 걸 발견했다.
 
-<iframe src="https://mastodon.social/@slipstream/99758520139922701/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
+{% mastodon https://mastodon.social/@slipstream/99758520139922701 %}
+> @tinker basically, it communicates with a server hosted in the US, where it sends at least:
+>
+> - every public toot seen by the app
+> - every OAuth token of its users
 
 **?!?!?!!?!**
 글 뿐만 아니라 앱에서 인증 토큰을 서버로 전송하고 있었다고 한다.
@@ -83,10 +101,7 @@ https://mastodon.social/@slipstream/99757282934340893
 
 그 와중에 툿돈 공식 계정은 뭘 했냐면...
 
-<iframe src="https://mstdn.jp/@tootdon/99759644880024717/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mstdn.jp/embed.js" async="async"></script>
-
-https://mstdn.jp/@tootdon/99759644880024717
-
+{% mastodon https://mstdn.jp/@tootdon/99759644880024717 %}
 > 우리는 퍼블릭으로 된 글만 수집하는데다가 툿돈 클라이언트에서 글을 삭제하면 곧바로 데이터를 지워. 그리고 한 달이 지난 것들은 모두 삭제해.
 
 라는 평화로운 말을 했다.
@@ -102,7 +117,12 @@ https://mstdn.jp/@tootdon/99759644880024717
 > 9-13 本サービス又は本アプリを逆アセンブル、逆コンパイル、リバースエンジニアリング、その他本サービスのソースコードを解析する行為
 > 9조 13항: 이 서비스 또는 이 앱을 분해, 디컴파일, 리버스 엔지니어링 및 기타 본 서비스의 소스코드를 분석하는 행위(를 금한다)
 
-<iframe src="https://mastodon.social/@kjwon15/99760834952447130/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
+{% mastodon https://mastodon.social/@kjwon15/99760834952447130 %}
+> Funny thing about #tootdon tos
+> http://tootdon.club/tos
+> At 9-13:
+> "Do not decompile, Reverse engineering, or something"
+> me: 😂 😮 nooo, I'll do it. Absolutely.
 
 다른 앱에서야 그냥 그러려니 하고 넘어 갈 조항이지만 이 항목을 다시 보니 참 여러 생각이 든다.
 (물론 조항 개무시하고 뜯었다. 약관 위반이 불법은 아니니까. 애초에 이 앱을 더 사용 할 이유도 없었고)
@@ -111,8 +131,8 @@ https://mstdn.jp/@tootdon/99759644880024717
 
 안 그래도 요즘 페이스북이 통화기록을 다 가져가는 이상한 짓을 해서 deletefacebook이니 뭐니 하는 판인데(덕분에 마스토돈 유저 늘었다) 마스토돈의 제일 잘 나가는 클라이언트 앱 하나가 이런 일을 하고 있었다는 게 밝혀지니 참..
 
-> 2018-03-28 10:50 @kaniini@pleroma.dereferenced.org [^7]
+> 2018-03-28 10:50 @kaniini@pleroma.dereferenced.org [^6]
 > APP MODEL INSPIRED BY BOOKFACE OBVIOUSLY
 
 
-[^7]: https://pleroma.dereferenced.org/objects/47a57bb2-c88c-4330-8b38-efe03f5ff70c
+[^6]: https://pleroma.dereferenced.org/objects/47a57bb2-c88c-4330-8b38-efe03f5ff70c
