@@ -52,7 +52,7 @@ case $1 in
     suspend)
         echo "Fixing acpi settings"
         blacklist=('XHC')
-        for device in $blacklist; do
+        for device in "${blacklist[@]}"; do
             state=$(grep "$device" /proc/acpi/wakeup | awk -c '{print $3}' | tr -d '*')
             echo "$device state = $state"
             if [ "$state" == "enabled" ]; then
@@ -63,6 +63,26 @@ case $1 in
     thaw)
         ;;
     resume)
+        ;;
+esac
+```
+
+```sh
+#!/bin/bash
+# /lib/systemd/system-sleep/45-fix-wakeup
+[ "$1" == "pre" ] || exit
+
+case $2 in
+    suspend)
+        echo "Fixing ACPI settings"
+        blacklist=('XHC')
+        for device in "${blacklist[@]}"; do
+            state=$(grep "$device" /proc/acpi/wakeup | awk -c '{print $3}' | tr -d '*')
+            echo "$device state = $state"
+            if [ "$state" == "enabled" ]; then
+                echo "$device" > /proc/acpi/wakeup
+            fi
+        done
         ;;
 esac
 ```
