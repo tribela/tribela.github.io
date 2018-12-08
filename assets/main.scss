@@ -3,8 +3,9 @@
 ---
 @charset "utf-8";
 
+
 // Our variables
-$base-font-family: "Apple SD Gothic Neo", AppleGothic, NanumBarunGothic, "Malgun Gothic", Dotum, sans-serif;
+$base-font-family: "Open Sans", "Noto Sans CJK KR", NanumBarunGothic, "Malgun Gothic", Dotum, sans-serif;
 $monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace;
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -80,7 +81,6 @@ $on-laptop:        800px;
     width: 20px;
   }
 }
-
 
 
 // Import partials from the `whiteglass` theme.
