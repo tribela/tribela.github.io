@@ -24,7 +24,7 @@ overlayfs는 기존 파일들은 그대로 두고 변경사항만 따로 다른 
 mkdir /tmp/{upper,overlay,workdir}
 mount -t overlay overlay -o upperdir=/tmp/upper,lowerdir=/mnt/backup,workdir=/tmp/workdir /tmp/overlay
 restic -r /tmp/overlay prune
-rsync --delete -rulHtv /tmp/overlay/ /mnt/backup/
+rsync --delete-before -rulHtv /tmp/overlay/ /mnt/backup/
 umount /tmp/overlay
 rm -r /tmp/{upper,overlay,workdir}
 ```
