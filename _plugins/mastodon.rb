@@ -2,7 +2,7 @@
 class Mastodon < Liquid::Tag
   def initialize(tag_name, input, tokens)
     super
-    @src = input
+    @src = input.strip
   end
 
   def render(context)
