@@ -2,14 +2,63 @@
 <link rel="me" href="https://mastodon.social/@kjwon15" />
 <link rel="me" href="https://qdon.space/@jarm" />
 
+<style>
+@keyframes glitch-anim-text {
+
+  0% {
+    transform: none;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%, 0 10vh, 100% 10vh, 100% 100%, 0 100%);
+  }
+
+
+  9%, 11% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(-1, 0);
+  }
+
+  49%, 51% {
+    transform: none;
+  }
+  50% {
+    transform: scale(-1, 1) translate(10px, 5px);
+  }
+  50.5% {
+    transform: translate(-10px, -5px);
+  }
+  
+  69%, 71% {
+    background: initial;
+  }
+  70% {
+    background: black;
+  }
+
+  75%, 85% {
+    filter: none;
+  }
+  80% {
+    filter: drop-shadow(-5px 0 #f0f) drop-shadow(5px 0 #0ff);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vh), 0 calc(100% - 10vh), 0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+}
+</style>
+
 <script>
-    (function(){
+  (function(){
     const ua = navigator.userAgent;
     if (1
-	* /Chrome/.test(ua)
-	* /Windows/.test(ua)
+      * /Chrome/.test(ua)
+      * /Windows/.test(ua)
     ) {
-	alert("This blog doesn't support Chrome on Windows");
+      alert("This blog doesn't support Chrome on Windows");
+      window.addEventListener('load', () => {
+        document.body.style.animation = 'glitch-anim-text 5s infinite linear';
+      });
     }
-    })();
+  })();
 </script>
