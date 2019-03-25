@@ -27,19 +27,19 @@
   50.5% {
     transform: translate(-10px, -5px);
   }
-  
+
   69%, 71% {
-    background: initial;
+    filter: none;
   }
   70% {
-    background: black;
+    filter: invert(100%);
   }
 
-  75%, 85% {
+  78%, 85% {
     filter: none;
   }
   80% {
-    filter: drop-shadow(-5px 0 #f0f) drop-shadow(5px 0 #0ff);
+    filter: drop-shadow(-5px 0 rgba(255, 0, 255, .4)) drop-shadow(5px 0 rgba(0, 255, 255, .4));
   }
 
   100% {
