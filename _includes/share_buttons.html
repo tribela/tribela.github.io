@@ -5,7 +5,7 @@
     {% assign url = page.url | absolute_url | cgi_escape %}
     {% assign title =  page.title | cgi_escape  %}
 
-    <a target="_blank" role="button" rel="nofollow" href="web+mastodon://share?text={{ title }}%0a{{ url }}" title="Mastodon share"><img src="{{ '/imgs/icons/mastodon.svg' | relative_url }}" alt="Mastodon" /></a>
+    <a target="_blank" role="button" rel="nofollow" href="/mastodon_share?text={{ title }}%0a{{ url }}" title="Mastodon share"><img src="{{ '/imgs/icons/mastodon.svg' | relative_url }}" alt="Mastodon" /></a>
 
     <a target="_blank" role="button" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" title="Facebook share"><img src="{{ '/imgs/icons/facebook.svg' | relative_url }}" alt="Facebook" /></a>
 

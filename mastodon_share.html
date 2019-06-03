@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mastodon share</title>
+    <style>
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #0b486b;
+  font-size: 20px;
+  color: #cff09e;
+}
+body {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+pre.preview {
+  box-sizing: border-box;
+  border: 1px solid #cff09e;
+  padding: 1em;
+}
+
+
+label[for="server"],
+input[name="server"] {
+  background: transparent;
+  font-weight: bold;
+  display: block;
+}
+input[name="server"] {
+  border: none;
+  border-bottom: 2px solid #3087d5;
+  font-weight: bold;
+  color: white;
+}
+button[type="submit"] {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: inherit;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+    <h1>Share post to mastodon</h1>
+      <form id="masto-share">
+        <pre class="preview"></pre>
+        <label for="server">Instance:</label>
+        <input type="text" id="server" name="server">
+        <input type="hidden" name="content">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const text = urlParams.get('text');
+
+      function submitHandler(event) {
+        event.preventDefault();
+        let form = event.target;
+        let server = form.querySelector('input[name="server"]').value;
+        let content = form.querySelector('input[name="content"]').value || text;
+
+        let url = `https://${server}/share?text=${encodeURIComponent(content)}`;
+        console.log(url);
+        location.href = url;
+      }
+      const form = document.querySelector('form#masto-share');
+      form.addEventListener('submit', submitHandler);
+
+      form.querySelector('input[name="content"]').value = text;
+      form.querySelector('pre.preview').textContent = text;
+      form.querySelector('input[name="server"]').focus();
+    </script>
+  </body>
+</html>
