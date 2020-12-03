@@ -20,3 +20,5 @@ gem "jekyll-gist", "~> 1.5"
 
 # Added at 2017-12-28 16:08:14 +0900 by kjwon15:
 gem "jekyll-whiteglass", "~> 1.5"
+
+gem "kramdown-parser-gfm", "~> 1.1"
