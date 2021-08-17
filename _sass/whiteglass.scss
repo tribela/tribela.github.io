@@ -37,6 +37,14 @@ $on-laptop:        800px !default;
   }
 }
 
+.post-content {
+  display: flex;
+  flex-direction: column;
+  blockquote {
+    align-self: center;
+  }
+}
+
 
 
 // Import partials.
