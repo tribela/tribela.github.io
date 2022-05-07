@@ -3,6 +3,9 @@ _site/
 .bundle/
 /vendor/bundle/
 
+.jekyll-cache
+.jekyll-metadata
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
