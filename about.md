@@ -6,7 +6,7 @@ permalink: /about/
 
 
 - I love GNU/Linux.
-  Specifically Ubuntu.
+  I used Ubuntu very long time.
 - I love to automate something.
 - I am a transgender.
 - I am proud of myself.
