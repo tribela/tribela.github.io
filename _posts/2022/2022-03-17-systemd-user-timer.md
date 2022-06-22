@@ -7,7 +7,7 @@ tags:
 - cron
 - anacron
 date: 2022-03-17 21:04:58 +0900
-lastmod: 2022-06-11 16:14:28 +0900
+lastmod: 2022-06-22 22:01:01 +0900
 ---
 
 crontab은 참 편리하다. 매일매일 돌아가는 백업 스크립트 등을 설정하기 좋고 심지어는 설정은 단 한 줄만 적으면 되니까 딱히 까먹을 일도 없다. 그나마 까먹을 수 있는 항목은 돌아갈 시각을 지정하는 부분인데 그건 crontab 파일에 주석으로 적어 놓으면 항상 먼저 보이기 때문에 그 또한 문제도 되지 않는다.
@@ -60,7 +60,7 @@ systemd timer는 강제실행은 할 수 없지만(서비스를 대신 실행해
 
 ```sh
 mkdir -p ~/.local/share/systemd/timers
-touch ~/.local/share/systemd/timers/backup.timer
+touch ~/.local/share/systemd/timers/stamp-backup.timer
 ```
 
 말 안 해도 `backup.timer` 부분은 타이머 이름에 맞게 바꾸어 줘야 한다는 건 당연하다.
