@@ -7,6 +7,7 @@ tags:
 - archive.today
 - wayback machine
 date: 2021-08-17 12:14:23 +0900
+lastmod: 2022-08-03 16:38:35 +0900
 ---
 
 웹 아카이브라는 것이 있다. [Wayback Machine][]이라는 것도 있지만 오늘 차단할 것은 archive.is(aka archive.today)다.
@@ -59,6 +60,10 @@ archive.is는 정말로 집요했다. 클플에서 CAPTCHA가 뜨면 일단 403 
 5.188.0.77
 45.135.229.10
 2001:67c:2660:425:c::1d2
+2001:67c:2660:425:21b:21ff:fead:ae14
+
+2001:67c:2660:425::/64
+
 ```
 
 ```
