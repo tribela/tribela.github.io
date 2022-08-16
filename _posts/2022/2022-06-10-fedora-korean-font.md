@@ -7,6 +7,7 @@ tags:
 - fedora
 - CJK
 date: 2022-06-10 19:19:07 +0900
+lastmod: 2022-08-17 01:17:13 +0900
 ---
 
 우분투에서 페도라로 갈아탄지 얼마 안 되었을 때 discord에서 한글 자모가 분리되어 입력되는 현상이 있었다. 입력기의 버그인 줄 알았는데 입력하고 난 뒤 폰에서 열어보면 자모가 분리되어 있지 않았기에 좀 이상했었고 결과적으로 내가 쓴 글이 아니어도 '가' 이후의 모든 글자들이 깨져 보이는 문제가 있었다.
@@ -19,11 +20,13 @@ date: 2022-06-10 19:19:07 +0900
 
 ```xml
 <!-- ~/.config/fontconfig/fonts.conf -->
-<selection>
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+<fontconfig>
   <rejectfont>
     <glob>/usr/share/fonts/google-droid-sans-fonts/*</glob>
   </rejectfont>
-</selection>
+</fontconfig>
 ```
 
 ---
