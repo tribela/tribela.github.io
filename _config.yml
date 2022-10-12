@@ -48,3 +48,9 @@ exclude:
 # Theme specific settings
 google_analytics: UA-109997464-1
 comments: false
+
+
+# Netlify settings
+
+include:
+  - _redirects
