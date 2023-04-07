@@ -32,18 +32,18 @@ no-user-rc,no-X11-forwarding ssh-rsa AAAA~~~~~ jarm@hostname
 실제로 다른 일을 하도록 실행해보면 에러가 뜬다.
 
 ```sh
-$ ssh jump@es.qdon.tk uptime
+$ ssh jump@es.qdon uptime
 This account is currently not available.
 ```
 
 
 ## 3. 클라이언트 설정하기
 
-사실 설정을 하지 않고서도 ssh jump@A user@B로 접속하면 된다. 하지만 매번 치기 귀찮으니 `~/.ssh/config` 파일을 수정한다.
+사실 설정을 하지 않고서도 ssh -J jump@A user@B로 접속하면 된다. 하지만 매번 치기 귀찮으니 `~/.ssh/config` 파일을 수정한다.
 
 ```sshconfig
 Host B
-    ProxuJump jump@A
+    ProxyJump jump@A
 ```
 
 당연히 A, B는 적절한 호스트명으로 바꿔야 한다.
