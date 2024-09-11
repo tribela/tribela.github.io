@@ -1,6 +1,7 @@
 title: "Jeong Arm"
 lang: "ko"
 author: "Jeong Arm"
+fediverse: "jarm@qdon.space"
 description: "Jeong Arm's blog"
 url: https://802.11ac.net
 baseurl: null # apply null if repo name is something like username.github.io
